@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>你好鸭！(〃'▽'〃)</title>
+  <script src="static/js/aframe.min.js"></script>
+  <script src="static/js/aframe-ar.js"></script>
+  <script src="static/js/aframe-extras.min.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+<a-scene embedded arjs='sourceType: webcam;'>
+  <a-marker preset='custom' type="pattern" url="static/marker/patt.hiro">
+    <!-- ironman__arc_reactor_with_sound -->
+    <a-entity position="0 4 0" rotation="0 90 0" scale="0.003 0.003 0.003" gltf-model="static/gltf/ironman__arc_reactor_with_sound/scene.gltf"></a-entity>
+  </a-marker>
+  <a-entity camera></a-entity>
+</a-scene>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>你好鸭！(〃'▽'〃)</title>
+  <script src="static/js/aframe.min.js"></script>
+  <script src="static/js/aframe-ar.js"></script>
+  <script src="static/js/aframe-extras.min.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+<a-scene embedded arjs='sourceType: webcam;'>
+  <a-marker preset='custom' type="pattern" url="static/marker/patt.hiro">
+    <!-- Pikachu -->
+    <a-entity position='0.2 1.2 0' text="width:5;value:Hello, I'm Pikachu!"></a-entity>
+    <a-entity position="0 0 0" scale="0.35 0.28 0.35" gltf-model="static/gltf/Pikachu/scene.gltf"></a-entity>
+    <a-sound src="static/gltf/Pikachu/p_sound.mp3" autoplay="false" position="0 0 0"></a-sound> 
+  </a-marker>
+  <a-entity camera></a-entity>
+</a-scene>
+</body>
+</html>
